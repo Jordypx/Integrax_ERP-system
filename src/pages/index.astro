@@ -3,6 +3,635 @@ import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
 ---
 
-<Layout title="Home | INTEGRAX" />
+<Layout title="INTEGRAX" />
 
-<h1>GOOD</h1>
+<!-- ═══ NAV ═══ -->
+<nav id="navbar">
+  <a class="nav-logo" href="/">
+    <!-- <div class="logo-mark">
+      <svg
+        viewBox="0 0 18 18"
+        fill="none"
+        stroke="#fff"
+        stroke-width="2"
+        stroke-linecap="round"
+      >
+        <rect x="2" y="2" width="5" height="5" rx="1"></rect>
+        <rect x="11" y="2" width="5" height="5" rx="1"></rect>
+        <rect x="2" y="11" width="5" height="5" rx="1"></rect>
+        <rect x="11" y="11" width="5" height="5" rx="1"></rect>
+      </svg>
+    </div>
+    <span class="logo-text">Integ<span>rax</span></span> -->
+    <img
+      src="src/assets/Modern geometric logo design.png"
+      alt="Integrax logo"
+      class="nav-logo-img"
+    />
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="#features">Features</a></li>
+    <li><a href="#modules">Modules</a></li>
+    <li><a href="#testimonials">Customers</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#">Docs</a></li>
+  </ul>
+
+  <div class="nav-ctas">
+    <button class="btn-ghost">Sign in</button>
+    <button class="btn-primary">Start free trial</button>
+  </div>
+
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile Menu Drawer -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#features">Features</a>
+  <a href="#modules">Modules</a>
+  <a href="#testimonials">Customers</a>
+  <a href="#pricing">Pricing</a>
+  <a href="#">Docs</a>
+  <div class="mobile-menu-ctas">
+    <button class="btn-ghost">Sign in</button>
+    <button class="btn-primary">Start free trial</button>
+  </div>
+</div>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero">
+  <div class="hero-orb2"></div>
+  <div class="hero-orb3"></div>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="hero-badge-dot"></span>
+      Trusted by 2,000+ businesses worldwide
+    </div>
+
+    <h1 class="hero-headline">
+      One platform.<br />
+      <span class="accent">Complete</span>
+      <span class="line2"> visibility.</span>
+    </h1>
+
+    <p class="hero-sub">
+      Integrax brings Finance, HR, Inventory, and Operations into a single,
+      unified ERP system — built for businesses that are serious about growth.
+    </p>
+
+    <div class="hero-actions">
+      <button class="btn-hero solid">
+        Start free trial
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          ><line x1="5" y1="12" x2="19" y2="12"></line><polyline
+            points="12 5 19 12 12 19"></polyline></svg
+        >
+      </button>
+      <button class="btn-hero outline">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          ><circle cx="12" cy="12" r="10"></circle><polygon
+            points="10 8 16 12 10 16 10 8"
+            fill="currentColor"
+            stroke="none"></polygon></svg
+        >
+        Watch demo
+      </button>
+    </div>
+
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="hero-stat-value">2<span>K+</span></div>
+        <div class="hero-stat-label">Businesses</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="hero-stat">
+        <div class="hero-stat-value">99<span>.9%</span></div>
+        <div class="hero-stat-label">Uptime SLA</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="hero-stat">
+        <div class="hero-stat-value">4<span> Modules</span></div>
+        <div class="hero-stat-label">Fully integrated</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="hero-stat">
+        <div class="hero-stat-value">4.8<span>/5</span></div>
+        <div class="hero-stat-label">CSAT Score</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FEATURES ═══ -->
+<section class="features" id="features">
+  <div class="features-header reveal">
+    <div class="section-label">Why Integrax</div>
+    <h2 class="section-title">Everything you need.<br />Nothing you don't.</h2>
+    <p class="section-sub">
+      Manage your business processes in one place — no juggling between tools,
+      no data silos, no guesswork.
+    </p>
+  </div>
+
+  <div class="features-grid">
+    <div class="feature-card reveal">
+      <div class="feature-icon fi-blue">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          ><path d="M3 3h18v4H3z"></path><path d="M3 10h18v4H3z"></path><path
+            d="M3 17h18v4H3z"></path></svg
+        >
+      </div>
+      <div class="feature-title">Real-time visibility</div>
+      <div class="feature-desc">
+        Every module surfaces live data so your team always has the full picture
+        — no manual report runs, no end-of-day surprises.
+      </div>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon fi-teal">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          ><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"
+          ></path><path d="M2 12l10 5 10-5"></path></svg
+        >
+      </div>
+      <div class="feature-title">Modular by design</div>
+      <div class="feature-desc">
+        Activate only the modules you need today. Add Finance, HR, Inventory, or
+        Operations as your business grows — no migration required.
+      </div>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon fi-green">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          ><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg
+        >
+      </div>
+      <div class="feature-title">Enterprise-grade security</div>
+      <div class="feature-desc">
+        Role-based access controls, data encryption at rest and in transit, and
+        a 99.9% uptime SLA — so your data is always safe and available.
+      </div>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon fi-slate">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          ><circle cx="12" cy="12" r="10"></circle><polyline
+            points="12 6 12 12 16 14"></polyline></svg
+        >
+      </div>
+      <div class="feature-title">Built for speed</div>
+      <div class="feature-desc">
+        Dashboards load in under two seconds. Workflows are designed to cut
+        manual work so your team spends time on what actually matters.
+      </div>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon fi-orange">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          ><rect x="2" y="3" width="20" height="14" rx="2"></rect><line
+            x1="8"
+            y1="21"
+            x2="16"
+            y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg
+        >
+      </div>
+      <div class="feature-title">Accessible everywhere</div>
+      <div class="feature-desc">
+        WCAG AA compliant UI across web and mobile. Your team can work from
+        anywhere without compromising usability or accessibility standards.
+      </div>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon fi-purple">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          ><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg
+        >
+      </div>
+      <div class="feature-title">Actionable insights</div>
+      <div class="feature-desc">
+        Executive dashboards, module-level reports, and live KPIs give
+        leadership the data they need to make confident, informed decisions.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ HOW IT WORKS ═══ -->
+<section class="how">
+  <div class="how-inner">
+    <div class="how-header reveal">
+      <div class="section-label">How it works</div>
+      <h2 class="section-title">Up and running in days, not months.</h2>
+      <p class="section-sub">
+        Getting started with Integrax is straightforward. No lengthy
+        implementations. No consultants required.
+      </p>
+    </div>
+
+    <div class="steps-row">
+      <div class="step reveal">
+        <div class="step-num">01</div>
+        <div class="step-title">Set up your workspace</div>
+        <div class="step-desc">
+          Create your organization, invite your team, and configure your roles
+          in minutes.
+        </div>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">02</div>
+        <div class="step-title">Activate your modules</div>
+        <div class="step-desc">
+          Choose Finance, HR, Inventory, or Operations — enable what you need,
+          when you need it.
+        </div>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">03</div>
+        <div class="step-title">Connect your data</div>
+        <div class="step-desc">
+          Import existing data or connect via our API. Everything flows into one
+          unified system automatically.
+        </div>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">04</div>
+        <div class="step-title">Operate with clarity</div>
+        <div class="step-desc">
+          Your team gets live dashboards, smart alerts, and the tools they need
+          to work efficiently every day.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ MODULES ═══ -->
+<section class="modules" id="modules">
+  <div style="max-width:1100px; margin:0 auto;">
+    <div class="reveal" style="text-align:center; margin-bottom:56px;">
+      <div class="section-label">Modules</div>
+      <h2 class="section-title">One system. Four powerful modules.</h2>
+      <p class="section-sub" style="margin:0 auto;">
+        Each module is purpose-built and fully integrated — so data flows
+        seamlessly across your entire organization.
+      </p>
+    </div>
+
+    <!-- Finance -->
+    <div class="modules-layout" style="margin-bottom:64px;">
+      <div class="module-tabs reveal">
+        <div class="module-tab active">
+          <div class="module-tab-icon fi-blue">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              ><rect x="2" y="5" width="20" height="14" rx="2"></rect><line
+                x1="2"
+                y1="10"
+                x2="22"
+                y2="10"></line></svg
+            >
+          </div>
+          <div class="module-tab-text">
+            <div class="module-tab-name">Finance</div>
+            <div class="module-tab-desc">
+              Track invoices, manage expenses, run payroll, and monitor cash
+              flow — all in one place.
+            </div>
+          </div>
+        </div>
+        <div class="module-tab">
+          <div class="module-tab-icon fi-teal">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              ><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
+              ></path><circle cx="9" cy="7" r="4"></circle></svg
+            >
+          </div>
+          <div class="module-tab-text">
+            <div class="module-tab-name">Human Resources</div>
+            <div class="module-tab-desc">
+              Manage hiring, onboarding, time-off, and employee records with
+              ease.
+            </div>
+          </div>
+        </div>
+        <div class="module-tab">
+          <div class="module-tab-icon fi-green">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              ><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+              ></path></svg
+            >
+          </div>
+          <div class="module-tab-text">
+            <div class="module-tab-name">Inventory</div>
+            <div class="module-tab-desc">
+              Monitor stock levels, set reorder points, and manage suppliers
+              without the spreadsheets.
+            </div>
+          </div>
+        </div>
+        <div class="module-tab">
+          <div class="module-tab-icon fi-orange">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              ><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"
+              ></polyline></svg
+            >
+          </div>
+          <div class="module-tab-text">
+            <div class="module-tab-name">Operations</div>
+            <div class="module-tab-desc">
+              Coordinate tasks, track progress, and keep projects moving across
+              your entire organization.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="module-visual mv-blue reveal">
+        <div class="mv-header">
+          <div class="mv-title">Finance Overview</div>
+          <div class="mv-sub">February 2026</div>
+        </div>
+        <div class="mv-metrics">
+          <div class="mv-metric">
+            <div class="mv-metric-val" style="color:var(--blue);">$4.2M</div>
+            <div class="mv-metric-lbl">Revenue</div>
+          </div>
+          <div class="mv-metric">
+            <div class="mv-metric-val" style="color:var(--green);">$1.8M</div>
+            <div class="mv-metric-lbl">Profit</div>
+          </div>
+          <div class="mv-metric">
+            <div class="mv-metric-val" style="color:var(--teal);">23</div>
+            <div class="mv-metric-lbl">Invoices</div>
+          </div>
+        </div>
+        <div class="mv-bar-row">
+          <div class="mv-bar-item">
+            <div class="mv-bar-label">
+              <span>Revenue</span><span>$4.2M</span>
+            </div>
+            <div class="mv-track">
+              <div class="mv-fill" style="width:88%; background:var(--blue);">
+              </div>
+            </div>
+          </div>
+          <div class="mv-bar-item">
+            <div class="mv-bar-label">
+              <span>Expenses</span><span>$2.4M</span>
+            </div>
+            <div class="mv-track">
+              <div class="mv-fill" style="width:56%; background:var(--teal);">
+              </div>
+            </div>
+          </div>
+          <div class="mv-bar-item">
+            <div class="mv-bar-label">
+              <span>Net Profit</span><span>$1.8M</span>
+            </div>
+            <div class="mv-track">
+              <div class="mv-fill" style="width:42%; background:var(--green);">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CTA ═══ -->
+<section class="cta-section">
+  <div class="cta-inner reveal">
+    <h2 class="cta-title">Ready to run your business smarter?</h2>
+    <p class="cta-sub">
+      Join over 2,000 businesses already using Integrax to manage their
+      operations, finances, and teams in one place.
+    </p>
+    <div class="cta-actions">
+      <button class="btn-hero solid">Start your free 14-day trial</button>
+      <button class="btn-hero outline">Talk to sales</button>
+    </div>
+    <p class="cta-note">No credit card required. Setup takes minutes.</p>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <div class="footer-logo-mark">
+          <svg
+            viewBox="0 0 18 18"
+            fill="none"
+            stroke="#fff"
+            stroke-width="2"
+            stroke-linecap="round"
+          >
+            <rect x="2" y="2" width="5" height="5" rx="1"></rect>
+            <rect x="11" y="2" width="5" height="5" rx="1"></rect>
+            <rect x="2" y="11" width="5" height="5" rx="1"></rect>
+            <rect x="11" y="11" width="5" height="5" rx="1"></rect>
+          </svg>
+        </div>
+        <span class="footer-logo-text">Integrax</span>
+      </div>
+      <p class="footer-desc">
+        Manage your business processes in one place — modular, secure, and built
+        for growth.
+      </p>
+      <div class="footer-trust">
+        <span class="trust-chip">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            ><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg
+          >
+          SOC 2 Ready
+        </span>
+        <span class="trust-chip">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg
+          >
+          WCAG AA
+        </span>
+        <span class="trust-chip">99.9% Uptime</span>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Product</div>
+      <ul class="footer-links">
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Modules</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Changelog</a></li>
+        <li><a href="#">Roadmap</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Company</div>
+      <ul class="footer-links">
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Press</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Resources</div>
+      <ul class="footer-links">
+        <li><a href="#">Documentation</a></li>
+        <li><a href="#">API Reference</a></li>
+        <li><a href="#">Status page</a></li>
+        <li><a href="#">Support center</a></li>
+        <li><a href="#">Community</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">
+      © 2026 <span>Integrax</span>. All rights reserved.
+    </div>
+    <div class="footer-legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Cookie Policy</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Navbar scroll effect
+  const navbar = document.getElementById("navbar");
+  window.addEventListener("scroll", () => {
+    if (navbar) {
+      navbar.classList.toggle("scrolled", window.scrollY > 20);
+    }
+  });
+
+  // Hamburger menu toggle
+  const hamburger = document.getElementById("hamburger");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  if (hamburger) {
+    hamburger.addEventListener("click", () => {
+      if (mobileMenu) {
+        const isOpen = mobileMenu.classList.toggle("open");
+        hamburger.classList.toggle("open", isOpen);
+        document.body.style.overflow = isOpen ? "hidden" : "";
+      }
+    });
+  }
+
+  // Close mobile menu on link click
+  if (mobileMenu) {
+    mobileMenu.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.remove("open");
+        if (hamburger) {
+          hamburger.classList.remove("open");
+        }
+        document.body.style.overflow = "";
+      });
+    });
+  }
+
+  // Close mobile menu on outside click
+  document.addEventListener("click", (e) => {
+    if (
+      (navbar ? !navbar.contains(e.target as Node) : true) &&
+      (mobileMenu ? !mobileMenu.contains(e.target as Node) : true)
+    ) {
+      if (mobileMenu) {
+        mobileMenu.classList.remove("open");
+      }
+      if (hamburger) {
+        hamburger.classList.remove("open");
+      }
+      document.body.style.overflow = "";
+    }
+  });
+
+  // Scroll reveal
+  const reveals = document.querySelectorAll(".reveal");
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add("visible"), i * 60);
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.1 },
+  );
+  reveals.forEach((el) => observer.observe(el));
+</script>

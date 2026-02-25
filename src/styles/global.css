@@ -61,7 +61,7 @@ nav.scrolled {
   gap: 10px;
   text-decoration: none;
 }
-/* .logo-mark {
+.logo-mark {
   width: 34px;
   height: 34px;
   background: var(--blue);
@@ -82,7 +82,7 @@ nav.scrolled {
 }
 .logo-text span {
   color: var(--teal);
-} */
+}
 
 .nav-logo-img {
   width: 200px;
